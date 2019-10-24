@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // parse requests of content-type - application/json
 app.use(bodyParser.json())
 app.use(expressValidator())
-app.use(express.static('../client'))
+app.use(express.static('../chatappfrontend'))
 
 io.on('connection', function(client) 
 {
